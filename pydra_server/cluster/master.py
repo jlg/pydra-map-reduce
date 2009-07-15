@@ -150,7 +150,7 @@ class Master(object):
 
         self.connect()
 
-        self.host = 'localhost'
+        self.host = pydraSettings.host #'localhost'
         self.autodiscovery()
 
     def autodiscovery(self, callback=None):
